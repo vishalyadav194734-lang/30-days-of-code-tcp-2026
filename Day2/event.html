@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+</head>
+<body>
+
+    <!-- Page Title -->
+    <h1>Tech Event 2026 – Schedule & Registration</h1>
+
+    <!-- Section 1: Event Schedule-->
+    <h2>Event Schedule</h2>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Opening Ceremony</td>
+                <td>Hira Hall</td>
+            </tr>
+            <tr>
+                <td>11:30 AM</td>
+                <td>Technical Workshop</td>
+                <td>Lab 1</td>
+            </tr>
+            <tr>
+                <td>02:00 PM</td>
+                <td>Project Presentation</td>
+                <td> CCC lab  </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!--  Section 2: Registration Form -->
+    <h2>Participant Registration Form</h2>
+
+    <form action="submit.html" method="post">
+
+        <!-- Name -->
+        <label for="name" >Full Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <!-- Age -->
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br><br>
+
+        <!-- Event  Date -->
+        <label for="date">Event Date:</label><br>
+        <input type="date" id="date" name="date"><br><br>
+
+        <!-- Radio Buttons -->
+        <p>Ticket Type:</p>
+        <input type="radio" id="standard" name="ticket" value="standard">
+        <label for="standard">Standard</label><br>
+
+        <input type="radio" id="premium" name="ticket" value="premium">
+        <label for="premium">Premium</label><br>
+
+        <input type="radio" id="vip" name="ticket" value="vip">
+        <label for="vip">VIP</label><br><br>
+
+        <!-- 6 Checkboxes -->
+        <p>Workshop Preferences:</p>
+        <input type="checkbox" id="html" name="workshop" value="html">
+        <label for="html">HTML Basics</label><br>
+
+        <input type="checkbox" id="css" name="workshop" value="css">
+        <label for="css">CSS Design</label><br>
+
+        <input type="checkbox" id="git" name="workshop" value="git">
+        <label for="git">Git & GitHub</label><br><br>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="45"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
