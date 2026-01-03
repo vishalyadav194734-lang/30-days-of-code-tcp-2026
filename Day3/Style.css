@@ -1,0 +1,119 @@
+/*  DAY 3: Portfolio Styling
+   Core CSS Fundamentals  */
+
+/*  1. Reset + Theme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #2563eb;
+    --background: #f9fafb;
+    --text: #1f2937;
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* 2. Layout  */
+header,
+main,
+footer {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* 3. Header & Navigation  */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 4. Typography */
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* -------- 5. Profile Image -------- */
+img {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+/* -------- 6. Buttons (Reusable) -------- */
+.btn {
+    display: inline-block;
+    background-color: var(--primary);
+    color: red ;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: yellow ;
+   
+}
+
+/* -------- 7. Projects / Skills Box -------- */
+article,
+ul,
+ol {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* -------- 8. Footer -------- */
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
