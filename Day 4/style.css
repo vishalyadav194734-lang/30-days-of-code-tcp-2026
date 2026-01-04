@@ -1,0 +1,124 @@
+/* =========================
+   DAY 4: HP Laptop Landing Page
+   ========================= */
+
+/* Header */
+.landing-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+}
+
+.logo {
+    font-size: 1.8rem;
+    color: var(--primary);
+}
+
+.landing-header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.landing-header nav a:hover {
+    color: var(--primary);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    animation: slideUp 1s ease forwards;
+}
+
+.hero-text {
+    margin: 15px 0 25px;
+    font-size: 1.1rem;
+}
+
+.hero-btn {
+    animation: slideUp 1.4s ease forwards;
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Features */
+.features {
+    text-align: center;
+}
+
+.feature-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--card-bg);
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Pricing */
+.pricing {
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price-card p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+}
+
+/* Footer */
+.landing-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .landing-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+}
